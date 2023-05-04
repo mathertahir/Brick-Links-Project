@@ -1,0 +1,36 @@
+:root {
+  --yellow: rgb(242, 190, 0);
+  --blue: rgb(12, 45, 98);
+}
+
+.navbar-main {
+  background-color: var(--blue);
+}
+
+.cl-white {
+  color: #fff;
+}
+.cl-white:hover {
+color: var(--yellow);
+}
+
+
+
+
+.dropdown-toggle {
+  color: #fff ;
+}
+.dropdown-toggle:hover{
+color: var(--yellow);
+}
+
+.dropdown-item:hover{
+  color: var(--yellow);
+  background-color: var(--blue);
+}
+
+
+.link-data:hover {
+  color: var(--yellow);
+}
+

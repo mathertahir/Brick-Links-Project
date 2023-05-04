@@ -1,10 +1,10 @@
-.category {
+/* .category {
   flex-wrap: wrap;
   margin-top: 80px !important;
-}
+} */
 .category .card {
   background-color: rgba(128, 128, 128, 0.097);
-  width: 18rem;
+  width: 20rem;
 }
 .category .card-name-price {
   display: flex;
@@ -36,3 +36,8 @@
 .category .card-img-top {
   height: 300px !important;
 }
+
+/* .card-main {
+  display: grid;
+  grid-template-columns: repeat(autofit, minmax(190px, 1fr));
+} */

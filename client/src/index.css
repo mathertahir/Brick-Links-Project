@@ -3,30 +3,35 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  box-sizing: border-box !important;
+}
+
+.main-container {
+  box-sizing: border-box !important;
 }
 
 /* font-family: 'Poppins', sans-serif; */
 /* font-family: 'Playfair Display', serif; */
 
 /* //navbar css */
-.navbar {
+/* .navbar {
   font-family: "Poppins", sans-serif;
-  font-size: 17px;
+  font-size: 1rem;
   line-height: 26px;
   text-transform: uppercase;
+
   box-shadow: 0 8px 6px -6px gray;
   --webkit-box-shadow: 0 8px 6px -6px gray;
   border-bottom: solid gray !important;
-}
+} */
 
 .nav-link {
   font-weight: 300 !important;
 }
 
-.active {
+/* .active {
   border-bottom: 2px solid black;
-}
+} */
 
 .navbar-brand {
   font-weight: 700;
@@ -43,9 +48,15 @@
   border-radius: 0;
 }
 .search-form button {
-  background-color: #000000;
+  background-color: rgb(12, 45, 98);
+  border: 1.6px solid white;
   border-radius: 0;
-  color: white;
+  color: rgb(222, 241, 172);
+}
+.search-form button:hover {
+  background-color: rgb(242, 190, 0);
+  color: #080808;
+  border: 1.6px solid white;
 }
 
 /* =============================
@@ -133,12 +144,19 @@
 ====dashboard
 =================== */
 
-.dashboard {
+/* .dashboard {
   margin-top: 100px !important;
-}
+} */
 
 .dashboard-menu h4 {
   background-color: #434343 !important;
   color: white;
   padding: 20px 0px;
+}
+
+.fs-20 {
+  font-size: 20px;
+}
+.fs-14 {
+  font-size: 14px;
 }

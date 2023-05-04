@@ -1,0 +1,59 @@
+:root {
+  --yellow: rgb(242, 190, 0);
+  --blue: rgb(12, 45, 98);
+}
+
+.footer-main {
+  background: var(--blue);
+}
+.footer-pic {
+  /* width: 110px !important;
+  height: 110px !important; */
+}
+
+.footer-link {
+  padding-left: 22px;
+}
+
+li::marker {
+  color: var(--yellow);
+}
+.footer-bottom {
+  background: var(--yellow);
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.cl-white {
+  color: #fff;
+}
+
+.cl-yellow {
+  color: var(--yellow);
+}
+
+.fw-400 {
+  font-weight: 400;
+}
+
+.column-head {
+  font-weight: bold;
+}
+
+.footer-bottom-links {
+  color: var(--blue);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.Logo-head {
+  text-decoration: none;
+  color: var(--yellow);
+  font-size: clamp(1rem, -0.5625rem + 5vw, 2.25rem);
+  font-style: italic;
+  font-weight: 500;
+}
+
+.Logo-head:hover {
+  color: #fff;
+}

@@ -9,7 +9,6 @@ import dotenv from "dotenv";
 
 dotenv.config();
 
-//payment gateway
 var gateway = new braintree.BraintreeGateway({
   environment: braintree.Environment.Sandbox,
   merchantId: process.env.BRAINTREE_MERCHANT_ID,
@@ -235,7 +234,7 @@ export const productCountController = async (req, res) => {
 // product list base on page
 export const productListController = async (req, res) => {
   try {
-    const perPage = 6;
+    const perPage = 7;
     const page = req.params.page ? req.params.page : 1;
     const products = await productModel
       .find({})
