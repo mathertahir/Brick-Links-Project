@@ -10,6 +10,12 @@
   box-sizing: border-box !important;
 }
 
+
+:root {
+  --yellow: rgb(242, 190, 0);
+  --blue: rgb(12, 45, 98);
+}
+
 /* font-family: 'Poppins', sans-serif; */
 /* font-family: 'Playfair Display', serif; */
 
@@ -149,14 +155,42 @@
 } */
 
 .dashboard-menu h4 {
-  background-color: #434343 !important;
-  color: white;
+  background-color: var(--blue);
+  color:var(--yellow);
   padding: 20px 0px;
 }
 
 .fs-20 {
-  font-size: 20px;
+font-size: 20px;
+  font-weight: 500;
 }
 .fs-14 {
   font-size: 14px;
+}
+.fs-45{
+  font-size: clamp(15px,2vw,45px );
+  font-weight: 500;
+  color: var(--blue);
+}
+.fs-35{
+  font-size: clamp(13px,2vw,25px );
+  font-weight: 500;
+}
+
+
+
+
+.cl-blue{
+  color: var(--blue) !important;
+  font-weight: 400 !important;
+}
+
+.list-group-item.active{
+  background-color: var(--yellow) !important;
+  border-color: var(--yellow) !important;
+}
+
+.btn-primary{
+background-color: var(--blue) !important;
+border-color: var(--blue) !important;
 }

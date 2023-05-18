@@ -23,6 +23,7 @@ import { FaArrowRight } from "react-icons/fa";
 
 import { FaArrowLeft } from "react-icons/fa";
 import { Container } from "react-bootstrap";
+import Header from "../components/Layout/Header";
 
 const HomePage = () => {
   const navigate = useNavigate();
@@ -145,7 +146,11 @@ useEffect(()=>{
   };
 
   return (
-    <Layout title={"ALl Products - Best offers "}>
+
+
+    <>
+
+<Layout title={"ALl Products - Best offers "}>
       {/* banner image */}
 
       <div className="homepage-main-container  cotainer-fluid">
@@ -236,12 +241,24 @@ useEffect(()=>{
                     <div className="card-name-price">
                       <h5 className="card-title">{p.name}</h5>
                       <h5 className="card-title card-price">
-                        {p.price.toLocaleString("en-US", {
+                        {p.price.toLocaleString("en-PK", {
                           style: "currency",
-                          currency: "USD",
+                          currency: "PKR",
                         })}
                       </h5>
                     </div>
+
+                     <div  className="card-quantity">
+                          <div  className="fs-20 ">Quantity:</div> 
+                          <div  className="quantity-count fs-20"> {p.quantity}</div>
+                     </div>
+
+                     <div>
+                     <div  className="fs-20 ">Type :</div> 
+                     <div  className="quantity-count fs-20"> {p.category._id}</div>
+                      </div>
+
+
                     <p className="card-text ">
                       {p.description.substring(0, 60)}...
                     </p>
@@ -375,6 +392,8 @@ useEffect(()=>{
         </Container>
       </div>
     </Layout>
+    </>
+ 
   );
 };
 

@@ -12,6 +12,16 @@
   justify-content: space-between;
 }
 
+ .card-quantity {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.quantity-count{
+  color: green;
+  font-weight: bold;
+}
+
 .category .card-price {
   color: green;
   font-weight: bold;

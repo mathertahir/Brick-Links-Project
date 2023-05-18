@@ -1,0 +1,11 @@
+
+:root {
+    --yellow: rgb(242, 190, 0);
+    --blue: rgb(12, 45, 98);
+  }
+
+.welcom-heading{
+    font-size: clamp(1.125rem, -1.2188rem + 7.5vw, 3rem);
+    color: var(--blue);
+    border-bottom: 3px solid var(--yellow);
+}

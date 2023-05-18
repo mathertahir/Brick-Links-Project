@@ -6,30 +6,40 @@ import { Toaster } from "react-hot-toast";
 import HomePage from "../../pages/HomePage";
 import "../../index.css";
 const Layout = ({ children, title, description, keywords, author }) => {
-  return (
+  return (  
+    
+    <>
+    <Header  className="fixed-top" /> 
     <div>
-      <Helmet>
-        <meta charSet="utf-8" />
-        <meta name="description" content={description} />
-        <meta name="keywords" content={keywords} />
-        <meta name="author" content={author} />
-        <title>{title}</title>
-      </Helmet>
-      <Header />
 
-      {/* <main
-        className="main-container"
 
-        // style={{ minHeight: "70vh" }}
-      >
-        <Toaster />
+<Helmet>
+  <meta charSet="utf-8" />
+  <meta name="description" content={description} />
+  <meta name="keywords" content={keywords} />
+  <meta name="author" content={author} />
+  <title>{title}</title>
+</Helmet>
 
-       
-      </main> */}
-      {children}
 
-      <Footer className="fixed-bottom" />
-    </div>
+{/* <main
+  className="main-container"
+
+  // style={{ minHeight: "70vh" }}
+>
+  <Toaster />
+
+ 
+</main> */}
+
+<div>     {children}</div>
+
+
+
+</div>
+<Footer className="fixed-bottom" />
+    </>
+ 
   );
 };
 

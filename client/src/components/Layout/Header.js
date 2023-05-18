@@ -27,7 +27,7 @@ const Header = () => {
     toast.success("Logout Successfully");
   };
   return (
-    <div className="header-main  fixed-top ">
+    <div className="header-main   ">
       <Navbar expand="lg" className=" navbar-main">
         <div className="container-fluid">
           <Navbar.Brand href="/" className="cl-white">

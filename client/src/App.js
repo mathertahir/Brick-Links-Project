@@ -26,11 +26,13 @@ import Categories from "./pages/Categories";
 import CategoryProduct from "./pages/CategoryProduct";
 import CartPage from "./pages/CartPage";
 import AdminOrders from "./pages/Admin/AdminOrders";
-import BricksCount from "./pages/user/BricksCount";
+import BricksCount from "./pages/BricksCount";
 import Header from "./components/Layout/Header";
+import   "./App.css"
 function App() {
   return (
     <>
+
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/product/:slug" element={<ProductDetails />} />
