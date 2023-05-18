@@ -194,3 +194,17 @@ font-size: 20px;
 background-color: var(--blue) !important;
 border-color: var(--blue) !important;
 }
+
+.brickscount-main{
+  background-color: var(--yellow);
+}
+
+.btn-calculate{
+  background-color:var(--blue) !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+.fw-800{
+  font-weight: bold;
+}
