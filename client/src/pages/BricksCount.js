@@ -1,11 +1,21 @@
-import React from "react";
+import React, { useState } from 'react';
 import Layout from "./../components/Layout/Layout";
 import { Col, Container, Row} from "react-bootstrap";
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
+import Modal from 'react-bootstrap/Modal';
+
 
 const BricksCount = () => {
+
+  const [show, setShow] = useState(false);
+
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
   return(
+
+
+    
     <>
 
     <Layout title={"ALl Products - Best offers "}>
@@ -109,12 +119,35 @@ const BricksCount = () => {
 
   <Col sm={12}>
   <Form className="py-4 "> 
-  <button
+  <Button
                     className="btn btn-danger w-100 btn-calculate py-3"
+
+                    onClick={handleShow}
                    
                   >
                     Calculate Bricks
-                  </button>
+                  </Button>
+
+
+                  <Modal show={show} onHide={handleClose} animation={false} 
+                     centered
+                  >
+        <Modal.Header closeButton  className='  model-main-heading'>
+
+        <Modal.Title  className='cl-white'>The Required Bricks For Your Area</Modal.Title>
+    
+         
+        </Modal.Header>
+        <Modal.Body className='fs-45'>1010000</Modal.Body>
+        <Modal.Footer>
+          <Button variant="secondary" onClick={handleClose}>
+            Close
+          </Button>
+          <Button variant="primary" onClick={handleClose}>
+            Save Changes
+          </Button>
+        </Modal.Footer>
+      </Modal>
 
     </Form>
 

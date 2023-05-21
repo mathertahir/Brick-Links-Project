@@ -42,7 +42,7 @@ const Header = () => {
               <Nav.Link href="./brickscalculation" className="cl-white">
                 Brick's Calculation
               </Nav.Link>
-              <Nav.Link href="/map" className="cl-white">
+              <Nav.Link href="/housemap" className="cl-white">
                 House Map
               </Nav.Link>
 

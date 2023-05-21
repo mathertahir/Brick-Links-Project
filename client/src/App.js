@@ -29,6 +29,7 @@ import AdminOrders from "./pages/Admin/AdminOrders";
 import BricksCount from "./pages/BricksCount";
 import Header from "./components/Layout/Header";
 import   "./App.css"
+import HouseMap from "./pages/HouseMap";
 function App() {
   return (
     <>
@@ -61,6 +62,7 @@ function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/policy" element={<Policy />} />
         <Route path="/brickscalculation" element={<BricksCount />} />
+        <Route path="/housemap" element={<HouseMap />} />
         <Route path="*" element={<Pagenotfound />} />
       </Routes>
     </>
