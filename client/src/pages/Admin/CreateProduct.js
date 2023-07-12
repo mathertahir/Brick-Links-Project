@@ -64,8 +64,8 @@ const CreateProduct = () => {
 
   return (
     <Layout title={"Dashboard - Create Product"}>
-      <div className="container-fluid m-3 p-3 dashboard">
-        <div className="row">
+      <div className="container-fluid  p-3 dashboard">
+        <div className="row mx-0">
           <div className="col-md-3">
             <AdminMenu />
           </div>
@@ -116,7 +116,7 @@ const CreateProduct = () => {
                 <input
                   type="text"
                   value={name}
-                  placeholder="write a name"
+                  placeholder="write company name"
                   className="form-control"
                   onChange={(e) => setName(e.target.value)}
                 />
@@ -125,7 +125,7 @@ const CreateProduct = () => {
                 <textarea
                   type="text"
                   value={description}
-                  placeholder="write a description"
+                  placeholder="write Description"
                   className="form-control"
                   onChange={(e) => setDescription(e.target.value)}
                 />

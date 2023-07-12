@@ -27,8 +27,8 @@ const Footer = () => {
                   </a>
                 </div>
                 <div className="fs-16  fw-400 pt-2  cl-white">
-                  Lorem ipsum dolor sit amet consectetur. Senectus aliquam
-                  feugiat lectus fringilla ullamcorper non orci tempus.
+                  Brick Links is an online platform for online selling and purchasing of bricks.
+                
                 </div>
               </Col>
               <Col md={3}>
@@ -61,7 +61,7 @@ const Footer = () => {
                 <ul className="footer-link pt-2">
                   <li className="fs-16 fw-400 cl-white pt-1  ">Contact Us</li>
                   <li className="fs-16 fw-400 cl-white pt-1">
-                    harvestmoon@gmail.com
+                    bricklinks@gmail.com
                   </li>
                 </ul>
               </Col>

@@ -80,7 +80,7 @@ const CartPage = () => {
   return (
     <Layout>
       <div className=" cart-page">
-        <div className="row">
+        <div className="row mx-0">
           <div className="col-md-12">
             <h1 className="text-center bg-light p-2 mb-1">
               {!auth?.user
@@ -97,7 +97,7 @@ const CartPage = () => {
           </div>
         </div>
         <div className="container ">
-          <div className="row ">
+          <div className="row mx-0 ">
             <div className="col-md-7  p-0 m-0">
               {cart?.map((p) => (
                 <div className="row card flex-row" key={p._id}>
@@ -181,14 +181,14 @@ const CartPage = () => {
                       }}
                       onInstance={(instance) => setInstance(instance)}
                     />
-
+  <div className="py-2">
                     <button
-                      className="btn btn-primary"
+                      className="btn btn-primary  "
                       onClick={handlePayment}
                        disabled={loading || !instance || !auth?.user?.address}
                     >
                       {loading ? "Processing ...." : "Make Payment"}
-                    </button>
+                    </button></div>
                   </>
                 )}
               </div>

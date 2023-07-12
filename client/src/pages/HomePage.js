@@ -239,22 +239,22 @@ useEffect(()=>{
                   />
                   <div className="card-body">
                     <div className="card-name-price">
-                      <h5 className="card-title">{p.name}</h5>
-                      <h5 className="card-title card-price">
+                      <h6 className="card-title">{p.name}</h6>
+                      <h6 className="card-title card-price">
                         {p.price.toLocaleString("en-PK", {
                           style: "currency",
                           currency: "PKR",
                         })}
-                      </h5>
+                      </h6>
                     </div>
 
                      <div  className="card-quantity">
-                          <div  className="fs-20 ">Quantity:</div> 
-                          <div  className="quantity-count fs-20"> {p.quantity}</div>
+                          <div  className="fs-16 ">Quantity:</div> 
+                          <div  className="quantity-count fs-16"> {p.quantity}</div>
                      </div>
 
                      <div>
-                     <div  className="fs-20 ">Type :</div> 
+                     <div  className="fs-16 ">Type :</div> 
                      <div  className="quantity-count fs-20"> {p.category._id}</div>
                       </div>
 

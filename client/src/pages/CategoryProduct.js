@@ -29,9 +29,9 @@ const CategoryProduct = () => {
       <div className="container mt-3 category">
         <h4 className="text-center">Category - {category?.name}</h4>
         <h6 className="text-center">{products?.length} result found </h6>
-        <div className="row">
-          <div className="col-md-9 offset-1">
-            <div className="d-flex flex-wrap  ">
+        <div className="">
+          <div className=" ">
+            <div className="    card-listing-category ">
               {products?.map((p) => (
                 <div className="card m-2" key={p._id}>
                   <img
@@ -43,9 +43,9 @@ const CategoryProduct = () => {
                     <div className="card-name-price">
                       <h5 className="card-title">{p.name}</h5>
                       <h5 className="card-title card-price">
-                        {p.price.toLocaleString("en-US", {
+                        {p.price.toLocaleString("en-PK", {
                           style: "currency",
-                          currency: "USD",
+                          currency: "PKR",
                         })}
                       </h5>
                     </div>
